@@ -9,16 +9,12 @@ nano /boot/config.txt
 ```
 reboot
 ```
-3. Copy fun.sh script to your location in raspbian (for example /home/pi/)
+3. Copy [`fan.sh`](./fan.sh) script to your location in raspbian (for example /home/pi/)
 4. By calling of fun.sh with parameter 0-100 set PWM power output (50 -> set fun to 50%)
 ```
-. /home/pi/fun.sh 50
+. /home/pi/fan.sh 50
 ```
 5. By edit of parameter period=5000000 inside of script you can change PWM frequency. Default is 5000000 => 200Hz.
-
-## Automatic regulation script at Raspbian
-1. Copy also fun_control.sh
-2. 
 
 ## Enable Hardware RTC
 1. Turn on the I2C bus -> open terminal or ssh -> sudo raspi-config -> Advanced Options -> Interfacing options -> I2C -> Enable
